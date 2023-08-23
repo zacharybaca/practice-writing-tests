@@ -29,7 +29,12 @@ describe("Word", function () {
   describe("removeConsonants function", function () {
     it("should return the word with the consonants removed", function () {
       let vowels = ['a','e','i','o','u','A','E','I','O','U'];
-      expect(vowels).to.include(word.removeConsonants(word.word));
+      let newWord = word.removeConsonants();
+      newWord = newWord.split("");
+
+      for (let i = 0; i < newWord.length; i++) {
+        expect(vowels).to.include(newWord[i])
+      }
     });
   });
 
