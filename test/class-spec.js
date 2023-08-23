@@ -22,7 +22,7 @@ describe("Word", function () {
   describe("removeVowels function", function () {
     it("should return a the word with all vowels removed", function () {
       let vowels = ['a','e','i','o','u','A','E','I','O','U'];
-      expect(vowels).to.not.include(word.removeVowels());
+      expect(vowels).to.not.include(word.removeVowels(word.word));
     });
   });
 
